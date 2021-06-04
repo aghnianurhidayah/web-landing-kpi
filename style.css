@@ -1,0 +1,81 @@
+/* navbar */
+.navbar {
+    position: relative;
+}
+
+.navbar-brand img {
+    height: 56px;
+    width: 260px;
+}
+
+.nav-link {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+/* dropdown */
+.dropdown-item {
+    font-size: 15px;
+}
+
+/* jumbotron */
+.jumbotron {
+    background-image: url(imgkpi/kpi1.jpg);
+    background-size: cover;
+    height: 640px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 200px;
+    position: absolute;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* desktop ver */
+@media (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+    }
+
+    .navbar-brand img {
+        height: 76px;
+        width: 350px;
+    }
+
+    .dropdown-item {
+        text-transform: uppercase;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 40px;
+        margin-top: 220px;
+        margin-left: 50px;
+        line-height: 55px;
+        
+    }
+
+}
