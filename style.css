@@ -56,6 +56,76 @@
     font-weight: 500;
 }
 
+/* about */
+.about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.about h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 20px;
+    padding: 0 50px;
+}
+
+.about svg {
+    margin-bottom: -120px;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* vision */
+#vision {
+    background-color: #ebebeb;
+    padding: 0 50px;
+}
+
+#vision h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#vision img {
+    height: 35px;
+    width: 35px;
+}
+
+#vision p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* mission */
+#mission {
+    background-color: #ebebeb;
+}
+
+#mission h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#mission p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#mission img {
+    height: 35px;
+    width: 35px
+}
+
+
 /* desktop ver */
 @media (min-width: 992px) {
     .nav-link {
@@ -77,6 +147,35 @@
         margin-left: 30px;
         line-height: 55px;
         
+    }
+
+    .about p{
+        font-size: 23px;
+    }
+
+    .about svg {
+        margin-left: -116px;
+        margin-right: -116px;
+    }
+
+    #vision img {
+        height: 45px;
+        width: 45px;
+    }
+
+    #vision p {
+        font-size: 23px;
+    }
+
+    #mission img {
+        height: 45px;
+        width: 45px;
+    }
+
+    #mission p {
+        font-size: 23px;
+        margin-left: -10px;
+        margin-right: -10px;
     }
 
 }
