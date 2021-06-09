@@ -101,15 +101,9 @@
     padding: 0 50px;
 }
 
-.about svg {
-    margin-bottom: -150px;
-    margin-left: -12px;
-    margin-right: -12px;
-}
-
 /* vision */
 #vision {
-    background-color: #ebebeb;
+    background-image: linear-gradient(to top, rgba(235, 235, 235, 1), rgba(0,0,0,0));
     padding: 0 50px;
 }
 
@@ -117,6 +111,7 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 #vision img {
@@ -184,11 +179,6 @@
 
     .about p{
         font-size: 23px;
-    }
-
-    .about svg {
-        margin-left: -116px;
-        margin-right: -116px;
     }
 
     #vision img {
