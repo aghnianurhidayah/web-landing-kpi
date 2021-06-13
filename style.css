@@ -74,14 +74,22 @@
 }
 
 .info-panel h4 {
+    font-size: 23px;
     text-transform: uppercase;
     margin-top: 10px;
 }
 
 .info-panel p {
     font-size: 17px;
+    font-family: 'Nunito', sans-serif;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+
+/* body */
+body {
+    background-color: rgb(248, 247, 247);
 }
 
 
@@ -101,15 +109,9 @@
     padding: 0 50px;
 }
 
-.about svg {
-    margin-bottom: -150px;
-    margin-left: -12px;
-    margin-right: -12px;
-}
-
 /* vision */
 #vision {
-    background-color: #ebebeb;
+    background-image: linear-gradient(to top, rgba(235, 235, 235, 1), rgba(0,0,0,0));
     padding: 0 50px;
 }
 
@@ -117,6 +119,7 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 #vision img {
@@ -131,7 +134,8 @@
 
 /* mission */
 #mission {
-    background-color: #ebebeb;
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(235, 235, 235, 1));
+    margin-bottom: 150px;
 }
 
 #mission h2 {
@@ -152,6 +156,90 @@
 #mission img {
     height: 35px;
     width: 35px
+}
+
+/* content */
+.content {
+    margin-bottom: 100px;
+}
+
+.content h2 {
+    text-transform: uppercase;
+}
+
+.content p {
+    font-size: 15px;
+}
+
+/* product */
+#product {
+    margin-bottom: 150px;
+}
+
+#product img {
+    height: 350px;
+    width: 230px;
+    border-radius: 10px;
+}
+
+/* activity */
+#activity h2 {
+    margin-bottom: 40px;
+}
+
+#activity img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.7);
+}
+
+#activity p {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+
+/* footer */
+footer {
+    background-color: rgb(51, 51, 51);
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+footer h4 {
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+footer h6 {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+footer li {
+    color: rgba(255, 248, 220, 0.685);
+    font-size: 16px;
+    padding: 0 50px;
+    margin-bottom: 10px;
+}
+
+footer img {
+    height: 20px;
+    width: 20px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    border-top: 1px groove white;
+    padding-top: 50px;
 }
 
 
@@ -186,11 +274,6 @@
         font-size: 23px;
     }
 
-    .about svg {
-        margin-left: -116px;
-        margin-right: -116px;
-    }
-
     #vision img {
         height: 45px;
         width: 45px;
@@ -209,6 +292,20 @@
         font-size: 23px;
         margin-left: -10px;
         margin-right: -10px;
+    }
+    
+    .content p {
+        font-size: 18px;
+    }
+
+    #product img {
+        height: 750px;
+        width: 550px;
+    }
+
+    footer li {
+        margin-left: -70px;
+        margin-right: -50px;
     }
 
 }
