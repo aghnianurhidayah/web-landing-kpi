@@ -235,6 +235,14 @@ footer img {
     width: 20px;
 }
 
+footer p {
+    color: white;
+    text-align: center;
+    border-top: 1px groove white;
+    padding-top: 50px;
+}
+
+
 /* desktop ver */
 @media (min-width: 992px) {
     .nav-link {
