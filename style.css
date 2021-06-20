@@ -1,7 +1,10 @@
 /* navbar */
 .navbar {
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);;
 }
 
 .navbar-brand img {
@@ -9,15 +12,15 @@
     width: 260px;
 }
 
-.nav-link {
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
     font-size: 18px;
     margin-left: 20px;
 }
 
-/* dropdown */
-.dropdown-item {
-    font-size: 15px;
-}
 
 /* jumbotron */
 .jumbotron {
@@ -26,6 +29,8 @@
     height: 640px;
     position: relative;
     text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .jumbotron .container {
@@ -47,9 +52,7 @@
     color: white;
     font-size: 25px;
     font-weight: 300;
-    margin-top: 200px;
-    margin-right: 20px;
-    position: absolute;
+    margin-top: 150px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
@@ -60,8 +63,8 @@
 /* info panel */
 .info-panel {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    margin-top: -50px;
+    border-radius: 100px;
+    margin-top: -100px;
     background-color: white;
     padding: 30px;
     position: relative;
@@ -81,7 +84,7 @@
 
 .info-panel p {
     font-size: 17px;
-    font-family: 'Nunito', sans-serif;
+    font-style: italic;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -95,8 +98,8 @@ body {
 
 /* about */
 .about {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 150px;
+    margin-bottom: 50px;
 }
 
 .about h3 {
@@ -110,42 +113,41 @@ body {
 }
 
 /* vision */
-#vision {
+.vision {
     background-image: linear-gradient(to top, rgba(235, 235, 235, 1), rgba(0,0,0,0));
     padding: 0 50px;
 }
 
-#vision h2 {
+.vision h2 {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 50px;
 }
 
-#vision img {
+.vision img {
     height: 35px;
     width: 35px;
 }
 
-#vision p {
+.vision p {
     font-size: 20px;
     text-align: center;
 }
 
 /* mission */
-#mission {
+.mission {
     background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(235, 235, 235, 1));
-    margin-bottom: 150px;
 }
 
-#mission h2 {
+.mission h2 {
     text-align: center;
     text-transform: uppercase;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
-#mission p {
+.mission p {
     font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
@@ -153,62 +155,122 @@ body {
     margin-right: 50px;
 }
 
-#mission img {
+.mission img {
     height: 35px;
     width: 35px
 }
 
-/* content */
-.content {
+/* company */
+.company {
+    padding-top: 150px;
+}
+
+.company h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* part */
+.part {
     margin-bottom: 100px;
 }
 
-.content h2 {
+.part p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: -0.5px;
+}
+
+.progress {
+    height: 30px;
+}
+
+/* award */
+.award {
+    margin-bottom: 100px;
+}
+
+.award h2 {
+    margin-bottom: 20px;
+}
+
+.award img {
+    margin: 10px 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.award h6 {
     text-transform: uppercase;
 }
 
-.content p {
-    font-size: 15px;
+.award p {
+    font-style: italic;
 }
 
-/* product */
-#product {
-    margin-bottom: 150px;
-}
-
-#product img {
-    height: 350px;
-    width: 230px;
-    border-radius: 10px;
+.award .col-lg-4:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* activity */
-#activity h2 {
-    margin-bottom: 40px;
+.activity {
+    margin-top: 50px;
 }
 
-#activity img {
+.activity h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.activity img {
     height: 300px;
     width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 40px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
 }
 
-#activity p {
-    font-size: 20px;
+.activity p {
+    font-size: 17px;
     font-style: italic;
     margin-top: 15px;
 }
 
+/* factory */
+.factory {
+    margin-bottom: 150px;
+    padding-top: 150px;
+}
+
+.factory h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.factory p {
+    font-size: 13px;
+}
+
+/* product */
+.product {
+    margin-bottom: 100px;
+}
+
+.product img {
+    height: 350px;
+    width: 230px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
 
 /* footer */
 footer {
     background-color: rgb(51, 51, 51);
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
-footer h4 {
+.contact h4 {
     color: rgb(255, 255, 255);
     font-size: 23px;
     text-align: center;
@@ -216,7 +278,7 @@ footer h4 {
     margin-top: 30px;
 }
 
-footer h6 {
+.contact h6 {
     color: rgb(255, 255, 255);
     font-size: 17px;
     text-align: center;
@@ -226,11 +288,10 @@ footer h6 {
 footer li {
     color: rgba(255, 248, 220, 0.685);
     font-size: 16px;
-    padding: 0 50px;
     margin-bottom: 10px;
 }
 
-footer img {
+.contact img {
     height: 20px;
     width: 20px;
 }
@@ -240,6 +301,10 @@ footer p {
     text-align: center;
     border-top: 1px groove white;
     padding-top: 50px;
+}
+
+.contact {
+    margin-bottom: 50px;
 }
 
 
@@ -254,14 +319,8 @@ footer p {
         width: 350px;
     }
 
-    .dropdown-item {
-        text-transform: uppercase;
-    }
-
     .jumbotron .display-4 {
         font-size: 40px;
-        margin-top: 220px;
-        margin-left: 30px;
         line-height: 55px;   
     }
 
@@ -274,38 +333,37 @@ footer p {
         font-size: 23px;
     }
 
-    #vision img {
+    .vision img {
         height: 45px;
         width: 45px;
     }
 
-    #vision p {
+    .vision p {
         font-size: 23px;
     }
 
-    #mission img {
+    .mission img {
         height: 45px;
         width: 45px;
     }
 
-    #mission p {
+    .mission p {
         font-size: 23px;
         margin-left: -10px;
         margin-right: -10px;
     }
     
-    .content p {
+    .factory p {
         font-size: 18px;
     }
 
-    #product img {
-        height: 750px;
-        width: 550px;
+    .product h2 {
+        font-size: 30px;
     }
-
-    footer li {
-        margin-left: -70px;
-        margin-right: -50px;
+    .product img {
+        height: 700px;
+        width: 500px;
     }
 
 }
+
